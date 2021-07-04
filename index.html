@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dailyshop</title>
+    <script>
+      window.oncontextmenu=function(){
+        alert("Secure Dailyshop ");
+        return false;
+      }
+      window.addEventListener("offline",function(){
+        window.location.replace(alert('Please Check Your Internet Connection ...'));
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--Header part-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary main">
+        <div class="container-fluid">
+          <a class="navbar-brand logoname" href="#">DailyShop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex">
+              <input class="form-control me-0 searchbox" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fa fa-search searchbtn"></i></button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Login
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-id-card more"></i>My Profile SetUp</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-user more"></i>New User SignUp</a></li>
+                      <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-american-sign-language-interpreting more"></i>Login</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-bell more"></i>Notifaction</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-shopping-basket more"></i>Sell On DailyShop</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-question-circle more"></i>24 * 7 Customer Care</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><span style="font-size:22px; margin-left: 20px; text-align: center;"><i class="fa fa-cart-arrow-down cartsize"></span></i></a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     <!--Header Part Complite-->
+     <!--sliderpart daily shop-->
+     <div id="carouselExampleControls" class="carousel slide slcon" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./sl1.png" class="d-block w-100 imgslider"  alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./sl2.png" class="d-block w-100 imgslider" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./sl3.jpg" class="d-block w-100 imgslider" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+     <!--sliderpart complite-->
+     <!--
+       Login
+     -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><br>
+              <input type="Password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Login</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Create a Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Register-->
+       <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create a Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="Address" aria-label="password" aria-describedby="basic-addon1"><br>
+        <input type="text" class="form-control" placeholder="Email / Mobile no" aria-label="Username" aria-describedby="basic-addon1"><br>
+              <input type="Password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+     <!--productshow-->
+     <h3>Super Saver Deals Today</h3>
+     <div class="card-group">
+      <div class="card">
+        <img src="./1.jpg" class="card-img-top hig" alt="sofa">
+        <div class="card-body">
+          <h5 class="card-title">Top Sofa</h5>
+         
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="./2.jpg" class="card-img-top hig" alt="Dinning Table">
+        <div class="card-body">
+          <h5 class="card-title">Dinning Table</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./3.jpg" class="card-img-top hig" alt="bed">
+        <div class="card-body">
+          <h5 class="card-title">Bed</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./4.jpg" class="card-img-top hig" alt="Chair">
+        <div class="card-body">
+          <h5 class="card-title">Chair</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./5.jpg" class="card-img-top hig" alt="Modern Chair">
+        <div class="card-body">
+          <h5 class="card-title">Modern Chair</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./6.png" class="card-img-top hig" alt="Home Decorations">
+        <div class="card-body">
+          <h5 class="card-title">Home Decorations</h5>
+          
+         
+        </div>
+      </div>
+    </div>
+    <h3>Best Of Electronic</h3>
+    <div class="card-group">
+      <div class="card">
+        <img src="./11.jpg" class="card-img-top hig" alt="pc">
+        <div class="card-body">
+          <h5 class="card-title">Laptop</h5>
+         
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="./12.jpg" class="card-img-top hig" alt="boat">
+        <div class="card-body">
+          <h5 class="card-title">Boat</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./13.jpg" class="card-img-top hig" alt="oneplus">
+        <div class="card-body">
+          <h5 class="card-title">One +</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./14.jpg" class="card-img-top hig" alt="mouse">
+        <div class="card-body">
+          <h5 class="card-title">Mouse</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./15.jpg" class="card-img-top hig" alt="Watch">
+        <div class="card-body">
+          <h5 class="card-title">Watch</h5>
+          
+         
+        </div>
+      </div>
+      <div class="card">
+        <img src="./16.png" class="card-img-top hig" alt="mobile">
+        <div class="card-body">
+          <h5 class="card-title">mobile</h5>
+         </div>
+      </div>
+    </div>
+     <!--close product show-->
+     <!--Fotter start-->
+     <div class="row">
+       <div>About
+         <ul>
+           <li>Contact us</li>
+           <li>About us</li>
+           <li>Careers</li>
+           <li>DailyShop Story</li>
+         </ul>
+       </div>
+       <div>Help
+        <ul>
+          <li>Payment</li>
+          <li>Shiping & Return</li>
+          <li>Delevery Problem</li>
+          <li>Faq</li>
+        </ul>
+       </div>
+       <div>Policy
+        <ul>
+          <li>Security</li>
+          <li>Return Policy</li>
+          <li>Sitemap</li>
+          
+        </ul>
+       </div>
+       <div>Social
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Youtube</li>
+        </ul>
+       </div>
+       <div>Mail-us
+         <ul>
+           <li>
+             DailyShop Internet Private Limited Jodhpur Rajasthan (India).
+           </li>
+         </ul>
+       </div>
+       <div>Office-Address
+         <ul>
+           <li>
+            DailyShop Internet Private Limited,
+            Buildings Jodhpur 
+            Rajasthan, India
+            Telephone: 9145846975
+           </li>
+         </ul>
+       </div>
+     </div>
+     <!--Fotter close-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
